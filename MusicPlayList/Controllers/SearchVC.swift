@@ -54,21 +54,7 @@ class SearchVC: UIViewController {
     func firstLoad(){
         NetworkService.instance.getToken { (response , error) in
             if response != nil {
-                
-                NetworkService.instance.getMusicList(params: "love") { (response, error) in
-                    DispatchQueue.main.async {
-                        self.progress.stopAnimating()
-                    }
-                    if response != nil {
-                        self.musicList = response!
-                        DispatchQueue.main.async {
-                            self.musicListTV.reloadData()
-                        }
-                    }
-                    if error != nil{
-                        print(error!)
-                    }
-                }
+                self.musicFilter(textQuary: "love")
             }
             if error != nil {
                 print("Token API Error == "  , error!)
@@ -77,6 +63,24 @@ class SearchVC: UIViewController {
         
     }
     
+    
+    func musicFilter(textQuary:String){
+        NetworkService.instance.getMusicList(params: textQuary) { (response, error) in
+            DispatchQueue.main.async {
+                self.progress.stopAnimating()
+            }
+            if response != nil {
+                self.musicList = response!
+                DispatchQueue.main.async {
+                    self.musicListTV.reloadData()
+                }
+            }
+            if error != nil{
+                print(error!)
+            }
+        }
+
+    }
     
 }
 extension SearchVC :UITableViewDelegate , UITableViewDataSource{
@@ -125,21 +129,6 @@ extension SearchVC: UISearchBarDelegate{
     }
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        NetworkService.instance.getMusicList(params: searchText) { (response, error) in
-            DispatchQueue.main.async {
-                self.progress.stopAnimating()
-            }
-            if response != nil {
-                self.musicList = response!
-                DispatchQueue.main.async {
-                    self.musicListTV.reloadData()
-                }
-            }
-            if error != nil{
-                print(error!)
-            }
-        }
+        self.musicFilter(textQuary: searchText)
     }
-    
-    
 }

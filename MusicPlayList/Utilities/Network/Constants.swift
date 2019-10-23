@@ -9,8 +9,7 @@
 import Foundation
 
 // API URl
- let APIURL = "http://staging-gateway.mondiamedia.com"
- let BASE_URL = "\(APIURL)"
+ let BASE_URL = "http://staging-gateway.mondiamedia.com"
 
 
 // User Defaults
