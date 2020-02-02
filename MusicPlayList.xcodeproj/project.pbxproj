@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE40BBFC23E058E5007337E4 /* SecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE40BBFB23E058E5007337E4 /* SecondVC.swift */; };
 		CE42D1FF235F630C003B350A /* musicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE42D1FE235F630C003B350A /* musicCell.swift */; };
 		CE42D201235F6392003B350A /* ViewDesignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE42D200235F6392003B350A /* ViewDesignable.swift */; };
 		CE4DE1BB235EF5DF0085D55A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4DE1BA235EF5DF0085D55A /* AppDelegate.swift */; };
@@ -18,9 +19,17 @@
 		CE4DE1D7235F0DAC0085D55A /* MusicList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4DE1D6235F0DAC0085D55A /* MusicList.swift */; };
 		CE4DE1D9235F1D640085D55A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4DE1D8235F1D640085D55A /* Constants.swift */; };
 		CE4DE1DB235F1E7B0085D55A /* WebAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4DE1DA235F1E7B0085D55A /* WebAPI.swift */; };
+		CE5625F023D75FDB00E293F2 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5625EF23D75FDB00E293F2 /* State.swift */; };
+		CE5625F223D760A700E293F2 /* MusicListCellVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5625F123D760A700E293F2 /* MusicListCellVM.swift */; };
+		CE714AF423D60E7F00B67D2A /* MusicListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE714AF323D60E7F00B67D2A /* MusicListVM.swift */; };
+		CE7AD6CD23D99294005B7653 /* LoadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7AD6CC23D99294005B7653 /* LoadImage.swift */; };
+		CEC2489F23DDC923006F9EB6 /* DismissAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC2489E23DDC923006F9EB6 /* DismissAnimator.swift */; };
+		CEC248A123DDE846006F9EB6 /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC248A023DDE846006F9EB6 /* Interactor.swift */; };
+		CEF5758723D6ECA500DD0906 /* APIGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF5758623D6ECA500DD0906 /* APIGateway.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE40BBFB23E058E5007337E4 /* SecondVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondVC.swift; sourceTree = "<group>"; };
 		CE42D1FE235F630C003B350A /* musicCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = musicCell.swift; sourceTree = "<group>"; };
 		CE42D200235F6392003B350A /* ViewDesignable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewDesignable.swift; sourceTree = "<group>"; };
 		CE4DE1B7235EF5DF0085D55A /* MusicPlayList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicPlayList.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -34,6 +43,13 @@
 		CE4DE1D6235F0DAC0085D55A /* MusicList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicList.swift; sourceTree = "<group>"; };
 		CE4DE1D8235F1D640085D55A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		CE4DE1DA235F1E7B0085D55A /* WebAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebAPI.swift; sourceTree = "<group>"; };
+		CE5625EF23D75FDB00E293F2 /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
+		CE5625F123D760A700E293F2 /* MusicListCellVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicListCellVM.swift; sourceTree = "<group>"; };
+		CE714AF323D60E7F00B67D2A /* MusicListVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicListVM.swift; sourceTree = "<group>"; };
+		CE7AD6CC23D99294005B7653 /* LoadImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadImage.swift; sourceTree = "<group>"; };
+		CEC2489E23DDC923006F9EB6 /* DismissAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissAnimator.swift; sourceTree = "<group>"; };
+		CEC248A023DDE846006F9EB6 /* Interactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interactor.swift; sourceTree = "<group>"; };
+		CEF5758623D6ECA500DD0906 /* APIGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIGateway.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,11 +82,13 @@
 		CE4DE1B9235EF5DF0085D55A /* MusicPlayList */ = {
 			isa = PBXGroup;
 			children = (
+				CEC2489D23DDC900006F9EB6 /* Transitions */,
 				CE4DE1D3235EFD7A0085D55A /* Resources */,
 				CE4DE1D0235EFC700085D55A /* Utilities */,
 				CE4DE1CF235EFC640085D55A /* Models */,
 				CE4DE1CE235EFC4B0085D55A /* Views */,
 				CE4DE1CC235EFC0F0085D55A /* Controllers */,
+				CE714AF223D60E5E00B67D2A /* ViewModel */,
 				CE4DE1BA235EF5DF0085D55A /* AppDelegate.swift */,
 				CE4DE1C1235EF5E00085D55A /* Assets.xcassets */,
 				CE4DE1C6235EF5E00085D55A /* Info.plist */,
@@ -83,6 +101,7 @@
 			children = (
 				CE4DE1BC235EF5DF0085D55A /* SearchVC.swift */,
 				CE4DE1D4235F09A90085D55A /* DetailsVC.swift */,
+				CE40BBFB23E058E5007337E4 /* SecondVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -107,18 +126,19 @@
 		CE4DE1D0235EFC700085D55A /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				CE4DE1D1235EFD2F0085D55A /* Network */,
+				CEF5758523D6EC5B00DD0906 /* API Service */,
+				CE4DE1D1235EFD2F0085D55A /* Network  */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
 		};
-		CE4DE1D1235EFD2F0085D55A /* Network */ = {
+		CE4DE1D1235EFD2F0085D55A /* Network  */ = {
 			isa = PBXGroup;
 			children = (
 				CE4DE1D8235F1D640085D55A /* Constants.swift */,
 				CE4DE1DA235F1E7B0085D55A /* WebAPI.swift */,
 			);
-			path = Network;
+			path = "Network ";
 			sourceTree = "<group>";
 		};
 		CE4DE1D2235EFD440085D55A /* Desiganble */ = {
@@ -136,6 +156,34 @@
 				CE4DE1C3235EF5E00085D55A /* LaunchScreen.storyboard */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		CE714AF223D60E5E00B67D2A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CE714AF323D60E7F00B67D2A /* MusicListVM.swift */,
+				CE5625F123D760A700E293F2 /* MusicListCellVM.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CEC2489D23DDC900006F9EB6 /* Transitions */ = {
+			isa = PBXGroup;
+			children = (
+				CEC2489E23DDC923006F9EB6 /* DismissAnimator.swift */,
+				CEC248A023DDE846006F9EB6 /* Interactor.swift */,
+			);
+			name = Transitions;
+			sourceTree = "<group>";
+		};
+		CEF5758523D6EC5B00DD0906 /* API Service */ = {
+			isa = PBXGroup;
+			children = (
+				CEF5758623D6ECA500DD0906 /* APIGateway.swift */,
+				CE5625EF23D75FDB00E293F2 /* State.swift */,
+				CE7AD6CC23D99294005B7653 /* LoadImage.swift */,
+			);
+			path = "API Service";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,11 +260,19 @@
 				CE42D201235F6392003B350A /* ViewDesignable.swift in Sources */,
 				CE4DE1D9235F1D640085D55A /* Constants.swift in Sources */,
 				CE4DE1DB235F1E7B0085D55A /* WebAPI.swift in Sources */,
+				CE5625F023D75FDB00E293F2 /* State.swift in Sources */,
+				CE5625F223D760A700E293F2 /* MusicListCellVM.swift in Sources */,
 				CE4DE1BD235EF5DF0085D55A /* SearchVC.swift in Sources */,
 				CE42D1FF235F630C003B350A /* musicCell.swift in Sources */,
 				CE4DE1D5235F09A90085D55A /* DetailsVC.swift in Sources */,
+				CEF5758723D6ECA500DD0906 /* APIGateway.swift in Sources */,
+				CE714AF423D60E7F00B67D2A /* MusicListVM.swift in Sources */,
 				CE4DE1BB235EF5DF0085D55A /* AppDelegate.swift in Sources */,
+				CE7AD6CD23D99294005B7653 /* LoadImage.swift in Sources */,
+				CEC248A123DDE846006F9EB6 /* Interactor.swift in Sources */,
 				CE4DE1D7235F0DAC0085D55A /* MusicList.swift in Sources */,
+				CE40BBFC23E058E5007337E4 /* SecondVC.swift in Sources */,
+				CEC2489F23DDC923006F9EB6 /* DismissAnimator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
