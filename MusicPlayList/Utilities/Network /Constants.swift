@@ -11,10 +11,8 @@ import Foundation
 // API URl
  let BASE_URL = "http://staging-gateway.mondiamedia.com"
 
-
 // User Defaults
 let TOKEN_KEY = "token"
-
 
 // CompletionHandler
 typealias getTokenCompleted = (_ token:String? , _ error:String?) -> ()

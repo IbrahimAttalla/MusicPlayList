@@ -55,7 +55,7 @@ struct IDBag: Codable {
     
 }
 
-// MARK: - Statistics
+// MARK:- Statistics
 struct Statistics: Codable {
     var popularity: Int?
     var estimatedRecentCount: Int?
